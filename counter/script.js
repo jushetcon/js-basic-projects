@@ -1,5 +1,7 @@
 const increase = document.querySelector('.increase')
 const decrease = document.querySelector('.decrease')
+const add10 = document.querySelector('.add10')
+const minus10 = document.querySelector('.minus10')
 const reset = document.querySelector('.reset')
 const value = document.getElementById('value')
 
@@ -13,6 +15,14 @@ reset.addEventListener('click', function () {
 
 decrease.addEventListener('click', function () {
 	value.innerHTML--
+})
+
+add10.addEventListener('click', function () {
+	value.innerHTML = Number(value.innerHTML) + 10
+})
+
+minus10.addEventListener('click', function () {
+	value.innerHTML = Number(value.innerHTML) - 10
 })
 
 // let count = 0
